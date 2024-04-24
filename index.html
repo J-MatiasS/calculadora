@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="index.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center calculadora">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tela d-flex justify-content-center">
+                    <input id="tela" type="text" disabled="disabled" value="0">
+                </div>
+                <div class="botoes-1">
+                    <button onclick="Limpar()" class="c">C</button>
+                    <button id="divisao" onclick="Calcular('acao', '/')" class="botao-normal operador">/</button>
+                    <button id="multiplicacao" onclick="Calcular('acao', '*')" class="botao-normal operador">X</button>
+                </div>
+                <div class="botoes-2">
+                    <button onclick="Calcular('valor', 7)" class="botao-normal">7</button>
+                    <button onclick="Calcular('valor', 8)" class="botao-normal">8</button>
+                    <button onclick="Calcular('valor', 9)" class="botao-normal">9</button>
+                    <button id="subtracao" onclick="Calcular('acao', '-')" class="botao-normal operador">-</button>
+                </div>
+                <div class="botoes-3">
+                    <button onclick="Calcular('valor', 4)" class="botao-normal">4</button>
+                    <button onclick="Calcular('valor', 5)" class="botao-normal">5</button>
+                    <button onclick="Calcular('valor', 6)" class="botao-normal">6</button>
+                    <button id="adicao" onclick="Calcular('acao', '+')" class="botao-normal operador">+</button>
+                </div>
+                <div class="botao-igual">
+                    <button onclick="Resultado()" class="igual">=</button>
+                </div>
+                <div class="botoes-4">
+                    <button onclick="Calcular('valor', 1)" class="botao-normal">1</button>
+                    <button onclick="Calcular('valor', 2)" class="botao-normal">2</button>
+                    <button onclick="Calcular('valor', 3)" class="botao-normal">3</button>
+                </div>
+                <div class="botoes-5">
+                    <button onclick="Calcular('valor', 0)" class="zero">0</button>
+                    <button onclick="Calcular('acao', '.')" class="botao-normal">.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+}
+
+input {
+    height: 50px;
+    width: 280px;
+    border-radius: 10px;
+    border: none;
+    background-color: aliceblue;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.botao-normal, .igual, .c, .zero {
+    cursor: pointer;
+}
+
+.calculadora {
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: rgb(38, 38, 37);
+}
+
+.botoes-1 {
+    margin-top: 20px;
+}
+
+.botao-normal {
+    width: 70px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    color: aliceblue;
+}
+
+.botao-normal:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.c, .zero {
+    width: 144px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    color: aliceblue;
+}
+
+.c:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.zero:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.botao-igual {
+    float: right;
+}
+
+.igual {
+    height: 90px;
+    width: 70px;
+    clear: both;
+    border-radius: 10px;
+    border: none;
+    background-color: grey;
+    color: aliceblue;
+}
+
+.igual:hover {
+    background-color: rgb(179, 179, 179);
+}
